@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+    <link rel="stylesheet" th:href="@{/css/history_screen_styles.css}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me muevo</title>
+    <body>
+        <header>
+            <h1>Me muevo</h1>
+            <nav>
+                <ul>
+                    <li><a th:href="@{/home}">Inicio</a></li>
+                    <li><a th:href="@{/reload}">Recarga</a></li>
+                    <li><a th:href="@{#}">Historial</a></li>
+                    <li><a th:href="@{/settings}">Ajustes</a></li>
+                    <li><a th:href="@{/account}">Cuenta</a></li>
+                    <li><a th:href="@{/logout}">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1>Historial</h1>
+                <section class="grafica">
+                    <script th:src="@{https://cdn.jsdelivr.net/npm/chart.js}"></script>
+                        <canvas id="lineChart"></canvas>
+                        <script th:src="@{/js/graphic.js}"></script>
+                </section>
+                <section class="historial">
+                    <h2 class="historial-title">Historial de Transacciones</h2>
+                    <table>
+                        <tr>
+                            <th> </th>
+                            <th>Recargas</th>
+                            <th>Pasajes</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Metrorrey. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>

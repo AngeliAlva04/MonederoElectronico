@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container { /* Cuadro de inicio de sesion */
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn1 { /* Botón de ingresar */
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+    width: 80px;
+    padding: 10px;
+    background-color: #6ED198;
+    color: #fff; 
+    border: #6ED198;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition-duration: 0.2s;
+    text-decoration: none;
+}
+
+.btn1:hover { /* Botón de ingresar: Cursor */
+    background-color: #fff;
+    border-radius: 4px;
+    color: #6ED198;
+    text-decoration: none;
+}
+
+.btn2 { /* Botón de registrar */
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+    width: 80px;
+    padding: 10px;
+    background-color: #fff;
+    color: #6c757d;
+    border: #6ED198;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+.btn2:hover { /* Botón de ingresar: Cursor */
+    background-color: #fff;
+    border: #36ac5d;
+    border-radius: 4px;
+    color: #36ac5d;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #309e55;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

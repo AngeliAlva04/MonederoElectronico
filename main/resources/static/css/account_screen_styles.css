@@ -1,0 +1,117 @@
+header {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+    padding: 10px;
+    background-color: #6ED198;
+    color: #fff; 
+    border: #6ED198;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul { /* Hace la lista */
+    list-style: none;
+}
+
+nav ul li { /* Hace la alineación */
+    display:inline-flex;
+    margin: 0 10px;
+}
+
+nav a { /* Hace el estilo */
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover { /* Hace el estilo con el cursor encima */
+    color: white;
+    text-decoration: underline;
+}
+
+.account-section {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    padding: 20px;
+}
+
+.account-section h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.account-form {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+
+.account-form input {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.account-form input[readonly] {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.button-container button {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    text-align: center;
+    padding: 15px;
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.button-container .btn1:hover {
+    color: #6ED198;
+    border-color: #6ED198;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-container .btn1:active {
+    color: #6ED198;
+    border-color: #6ED198;
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.button-container .btn2:hover {
+    color: #ff1a1a;
+    border-color: #ff1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-container .btn2:active {
+    color: #ff1a1a;
+    border-color: #ff1a1a;
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+    background: #6ED198;
+    color: white;
+}

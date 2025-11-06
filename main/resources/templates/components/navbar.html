@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <h1>Me muevo</h1>
+        <nav>
+            <ul>
+                <li><a th:href="@{/home}">Inicio</a></li>
+                <li><a th:href="@{/reload}">Recarga</a></li>
+                <li><a th:href="@{/history}">Historial</a></li>
+                <li><a th:href="@{/settings}">Ajustes</a></li>
+                <li><a th:href="@{#}">Cuenta</a></li>
+                <li><a th:href="@{/logout}">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
