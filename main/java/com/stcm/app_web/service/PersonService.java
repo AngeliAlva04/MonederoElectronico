@@ -12,14 +12,21 @@ import com.stcm.app_web.repository.PersonRepository;
 public class PersonService {
 
     @Autowired
-    private final PersonRepository personRepository;
+    private PersonRepository personRepository;
 
-    public PersonService(PersonRepository personRepository) {
-        this.personRepository = personRepository;
-    }
-
-    // Crea/Registra a una nueva persona
-    public void createPerson(Persona persona) {
-        personRepository.save(persona);
+    // OPCIÓN 1: Usando el query personalizado
+    public void createPersonWithCustomQuery(Persona persona) {
+        try {
+            personRepository.savePersona(
+                persona.getNombre(),
+                persona.getApellidos(), 
+                persona.getFechaNacimiento(),
+                persona.getCurp()
+            );
+            System.out.println("Persona registrada con Query");
+        } catch (Exception e) {
+            System.out.println("Error en query: " + e.getMessage());
+            throw e;
+        }
     }
 }

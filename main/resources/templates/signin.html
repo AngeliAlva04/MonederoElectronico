@@ -10,7 +10,7 @@
         <h2>Crear Cuenta</h2>
         
         <!-- Formulario de registro -->
-        <form id="registerForm" th:action="@{/signin}" method="post">
+        <form id="registerForm" action="/person/new" method="post">
             <div class="form-group">
                 <label for="nombres">Nombre(s):</label>
                 <input type="text" id="nombres" name="nombres" required placeholder="Ingresa tu nombre...">
