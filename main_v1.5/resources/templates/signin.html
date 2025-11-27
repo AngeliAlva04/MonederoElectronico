@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" th:href="@{/css/signin_screen_styles.css}">
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Crear Cuenta</h2>
+        
+        <!-- Formulario de registro -->
+        <form id="registerForm" action="/person/new" method="post">
+            <div class="form-group">
+                <label for="nombres">Nombre(s):</label>
+                <input type="text" id="nombres" name="nombres" required placeholder="Ingresa tu nombre...">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellido(s):</label>
+                <input type="text" id="apellidos" name="apellidos" required placeholder="Ingresa tu apellido...">
+            </div>
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            </div>
+            <div class="form-group">
+                <label for="CURP">CURP:</label>
+                <input type="text" id="CURP" name="CURP" required placeholder="Ingresa tu CURP...">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+
+        <!-- Botón para volver al login -->
+        <div class="login-section">
+            <p>¿Ya tienes un Usuario?</p>
+            <a th:href="@{/login}" class="btn btn-secondary">Cancelar</a>
+        </div>
+
+        <!-- Mensajes de éxito/error -->
+        <div id="message" class="alert" style="display: none;"></div>
+    </div>
+
+    <script th:src="@{/scripts/signin.js}"></script>
+</body>
+</html>
+

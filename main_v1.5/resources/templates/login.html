@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" th:href="@{/css/login_screen_styles.css}">
+</head>
+<body style="background-color: #4dff88;">
+
+    <div class="login-container">
+        <img th:src="@{/icons/logo_mtry.jpg}" alt="logo" style="width:50px;height:52px;">
+        <h2>Iniciar Sesión</h2>
+
+        <!-- Mensaje de error -->
+        <div th:if="${param.error}" class="error-message" style="color: red;">
+            Usuario o contraseña incorrectos
+        </div>
+        
+        <form th:action="@{/auth/login}" method="post">
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn1">Ingresar</button>
+
+            <a th:href="@{/signin}" class="btn2" role="button">
+                Registrarse
+            </a>
+        </form>
+    </div>
+
+</body>
+</html>

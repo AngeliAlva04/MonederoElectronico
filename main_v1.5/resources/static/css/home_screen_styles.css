@@ -1,0 +1,283 @@
+header {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+    padding: 10px;
+    background-color: #6ED198;
+    color: #fff; 
+    border: #6ED198;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul { /* Hace la lista */
+    list-style: none;
+}
+
+nav ul li { /* Hace la alineación */
+    display:inline-flex;
+    margin: 0 10px;
+}
+
+nav a { /* Hace el estilo */
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover { /* Hace el estilo con el cursor encima */
+    color: white;
+    text-decoration: underline;
+}
+
+body{
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+section {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.saldo {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-align: center;
+    background: #6ED198;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    width: 250px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.saldo_restante {
+    font-size: 14px; 
+    font-variant:normal; 
+}
+
+.historial {
+    font-family: "Century Gothic", CenturyGothic, sans-serif;
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    padding: 10px;
+}
+
+.subtitle {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-weight: none;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+            /*Botones de transaccion*/
+.button-container {
+    display: flex;
+    gap: 50px;
+}
+
+.Me_muevo, .metrorrey, .express {
+    text-align: center;
+    padding: 15px;
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.Me_muevo:hover, .metrorrey:hover, .express:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.Me_muevo:active, .metrorrey:active, .express:active {
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Me_muevo img, .metrorrey img, .express img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.Me_muevo .title, .metrorrey .title, .express .title {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.Me_muevo .price, .metrorrey .price, .express .price{
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 14px;
+    color: #666;
+}
+
+.ventana-modal{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* visibility: hidden; */
+    background-color: rgba(79,79, 79,0.2);
+    visibility: hidden;
+}
+
+.ventana {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    text-align: center;
+    background-color: #6ED198;
+    display: flex;
+    justify-content: auto;
+    align-items: auto;
+    height: 250px;
+    width: 400px;
+    margin: 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+ 
+  .ticket-title {
+    /* justify-content: center;
+    align-items: auto; */
+    position: absolute;
+    margin-top: -110px; /*igual se mueve pa arriba y abajo dea*/
+    /* margin: 0 0 20px; */
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .ticket-controls {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    display: flex;
+    /*justify-content: center;*/ /* Centrar los controles horizontalmente */
+    /*align-items: center;*/
+    position: absolute;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 20px; /* Espaciado uniforme entre elementos */
+  }
+  
+  .control-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .control-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .control-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .control-input { 
+    text-align: center;
+    font-size: 18px;
+    width: 60px; /* Más ancho para mejor legibilidad */
+    height: 40px; /* Altura mayor para alinearse con los botones */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .action-buttons {
+    /* display: flex;
+    justify-content: space-around; */
+    position: absolute;
+    margin-top: 140px; /*mayor es abajo menor es arriba*/
+  }
+  
+  .action-button {
+    font-family: "Century Gothic", CenturyGothic, sans-serif;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  .action-button:hover {
+    color: #ad6060;
+    border-color: #ad6060;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .action-button.accept {
+    background-color: white;
+    color: #333;
+  }
+  
+  .action-button.accept:hover {
+    color: #36684b;
+    border-color: #36684b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .action-button.accept:active {
+    color: #36684b;
+    border-color: #36684b;
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+footer{
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+    background: #6ED198;
+    color: white;
+}

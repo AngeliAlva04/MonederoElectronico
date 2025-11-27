@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+    <link rel="stylesheet" th:href="@{/css/home_screen_styles.css}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me muevo</title>
+    <body>
+        <header>
+            <h1>Me muevo</h1>
+            <nav>
+                <ul>
+                    <li><a th:href="@{#}">Inicio</a></li>
+                    <li><a th:href="@{/reload}">Recarga</a></li>
+                    <li><a th:href="@{/history}">Historial</a></li>
+                    <li><a th:href="@{/settings}">Ajustes</a></li>
+                    <li><a th:href="@{/account}">Cuenta</a></li>
+                    <li><a th:href="@{/logout}">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="saldo">
+                <h2>$100.00</h2>
+                <p class="saldo_restante"><span id="saldo">Tu saldo</span></p>
+            </section>
+            <title>Accede a tu transporte</title>
+        <div class="container">
+            <div class="subtitle">Accede a tu transporte</div>
+            <div class="button-container">
+                <button class="Me_muevo" id="MeMuevo">
+                    <img th:src="@{../icons/transporte-publico.png}" alt="Me muevo">
+                    <div class="title">Muevo Leon</div>
+                    <div class="price">Tarifa: $13.00</div>
+                </button>
+                <button class="metrorrey" id="Metrorrey">
+                    <img th:src="@{../icons/metro.png}" alt="Metrorrey">
+                    <div class="title">Metrorrey</div>
+                    <div class="price">Tarifa: $8.30</div>
+                </button>
+                <button class="express" id="Express">
+                    <img th:src="@{../icons/bus.png}" alt="Ruta Express">
+                    <div class="title">Ruta Express</div>
+                    <div class="price">Tarifa: $13.00</div>
+                </button>
+            </div>
+        </div>
+            <section class="historial">
+                <h2 class="historial-title">Historial de Transacciones</h2>
+                <ul id="lista-historial">
+                    <li>Ultima Recarga: $20.00</li>
+                    <li>Ultima Transacción: -$15.00</li>
+                </ul>
+            </section>
+        </main>
+        <div class="ventana-modal" id="open_Modal" style="visibility: hidden;">
+            <div class="ventana">
+                <h2 class="ticket-title">¿Cuántos boletos desea?</h2>
+                <div class="ticket-controls">
+                    <button class="control-button" onclick="changeValue(-1)">-</button>
+                    <input type="number" class="control-input" id="ticketCount" value="1" min="1">
+                    <button class="control-button" onclick="changeValue(1)">+</button>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-button accept" onclick="accept()">Aceptar</button>
+                    <button class="action-button cancel" id="close">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Metrorrey. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+    <script th:src="@{../scripts/modal.js}"></script>
+</html>

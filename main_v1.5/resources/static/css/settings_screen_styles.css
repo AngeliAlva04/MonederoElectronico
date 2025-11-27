@@ -1,0 +1,158 @@
+header {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+    padding: 10px;
+    background-color: #6ED198;
+    color: #fff; 
+    border: #6ED198;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul { /* Hace la lista */
+    list-style: none;
+}
+
+nav ul li { /* Hace la alineación */
+    display:inline-flex;
+    margin: 0 10px;
+}
+
+nav a { /* Hace el estilo */
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover { /* Hace el estilo con el cursor encima */
+    color: white;
+    text-decoration: underline;
+}
+
+.container{
+    padding: 10px;
+}
+
+.container h1 {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+}
+
+.button-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;    
+    margin-bottom: 30px;
+}
+
+.button-container button {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    text-align: center;
+    padding: 15px;
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    color: #6ED198;
+    border-color: #6ED198;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-container button:active {
+    color: #6ED198;
+    border-color: #6ED198;
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-container .btn7:hover {
+    color: #1a98ff;
+    border-color: #1a98ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-container .btn7:active {
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-container .btn8:hover {
+    color: #ff1a1a;
+    border-color: #ff1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.button-container .btn8:active {
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ventana-modal{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* visibility: hidden; */
+    background-color: rgba(79,79, 79,0.2);
+    visibility: hidden;
+}
+
+.ventana {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    text-align: center;
+    background-color: #6ED198;
+    display: flex;
+    justify-content: auto;
+    align-items: auto;
+    height: 250px;
+    width: 400px;
+    margin: 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-title{
+    position: absolute;
+    margin-top: -110px;
+    font-size: 18px;
+    color: #333;
+}
+
+.ventana-modal div{
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+footer{
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+    background: #6ED198;
+    color: white;
+}
