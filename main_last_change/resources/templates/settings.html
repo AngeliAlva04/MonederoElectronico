@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" th:href="@{/css/settings_screen_styles.css}">
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me muevo</title>
+    <body>
+        <header>
+            <h1>Me muevo</h1>
+            <nav>
+                <ul>
+                    <li><a th:href="@{/home}">Inicio</a></li>
+                    <li><a th:href="@{/reload}">Recarga</a></li>
+                    <li><a th:href="@{/history}">Historial</a></li>
+                    <li><a th:href="@{#}">Ajustes</a></li>
+                    <li><a th:href="@{/account}">Cuenta</a></li>
+                    <li><a th:href="@{/logout}">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1>Ajustes</h1>
+                <section class="settings">
+                    <div class="button-container">
+                        <button href="#" class="btn1" id="openModal-security">Seguridad</button>
+                        <button href="#" class="btn2" id="openModal-rate">Tarifa Preferencial</button>
+                        <button href="#" class="btn3" id="openModal-methods">Metodos de pago</button>
+                        <button href="#" class="btn4" id="openModal-reload">Recargas</button>
+                        <button href="#" class="btn5" id="openModal-notification">Notificaciones</button>
+                        <button href="#" class="btn6" id="openModal-preferences">Preferencias</button>
+                        <button href="#" class="btn7" id="openModal-support">Soporte</button>
+                        <button href="#" class="btn8" id="openModal-delete">Eliminar Cuenta</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="ventana-modal" id="open_Modal" style="visibility: hidden;">
+            <div class="ventana">
+                <h2 class="modal-title">Seguridad</h2>
+                <div class="security-controls">
+                    <button class="btn_option">Acceso Biometrico</button>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-button cancel" id="close">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <div id="open_ModalRate" class="ventana-modal" style="visibility: hidden;">
+            <div class="ventana">
+                <h2 class="modal-title">Tarifa Preferencial</h2>
+                <div class="rate-controls">
+                    <button class="btn_rate">Tramitar</button>
+                    <button class="btn_rate">Renovar</button>
+                    <button class="btn_rate">Anular</button>
+                    <button class="btn_rate" id="close">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <div class="ventana-modal" id="open_ModalPayment" style="visibility: hidden;">
+            <div class="payment_window">
+                <h2 class="modal-title">Metodo de pago</h2>
+                <div class="payment-controls">
+                    <button class="btn-payment">Administrar tarjetas</button>
+                    <button class="btn_payment">Establecer limitante (Efectivo)</button>
+                </div>
+            </div>
+        </div>
+        <div class="ventana-modal" id="open_ModalNotificaction" style="visibility: hidden;">
+            <div class="notification_window">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider_round">Activar Notificaciones</span>
+                </label>
+            </div>
+        </div>
+        <div class="ventana-modal" id="open_ModalPreferences" style="visibility: hidden;">
+            <div class="preferences-window">
+                <button class="btn-preferences">Idioma</button>
+                <button class="btn-preferences">Tema</button>
+                <button class="btn-preferences"></button>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Metrorrey. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+    <script th:src="@{../scripts/security_modal.js}"></script>
+    <script th:src="@{../scripts/preferential_rate.js}"></script>
+</html>

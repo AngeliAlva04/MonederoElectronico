@@ -1,0 +1,171 @@
+header {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+    padding: 10px;
+    background-color: #6ED198;
+    color: #fff; 
+    border: #6ED198;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul { /* Hace la lista */
+    list-style: none;
+}
+
+nav ul li { /* Hace la alineación */
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a { /* Hace el estilo */
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover { /* Hace el estilo con el cursor encima */
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h1{
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+}
+
+.saldo {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-align: center;
+    background: #6ED198;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    width: 250px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.saldo_restante {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-size: 16px; 
+    font-variant:normal; 
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    text-align: center;
+    padding: 15px;
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #6ED198;
+    border-color: #6ED198;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ventana-modal{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 125vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    /* visibility: hidden; */
+    background-color: rgba(79,79, 79,0.2);
+    visibility: hidden;
+}
+
+.ventana {
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    text-align: center;
+    background-color: #6ED198;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 400px;
+    margin: 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_action {
+    font-family: "Century Gothic", CenturyGothic, sans-serif;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    width: 91px;
+    cursor: pointer;
+    color: #333;
+}
+
+.btn_action.cancel:hover{
+    border: 1px, visible;
+    color: #ff1a1a;
+    border-color: #ff1a1a;
+}
+
+.recharge-title {
+    font-family: "Century Gothic", CenturyGothic, sans-serif;
+    display: absolute;
+}
+
+footer{
+    font-family: "Century Gothic", CenturyGothic, sans-serif; 
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+    background: #6ED198;
+    color: white;
+}
+

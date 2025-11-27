@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+    <link rel="stylesheet" th:href="@{/css/account_screen_styles.css}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me muevo</title>
+    <body>
+        <header>
+            <h1>Me muevo</h1>
+            <nav>
+                <ul>
+                    <li><a th:href="@{/home}">Inicio</a></li>
+                    <li><a th:href="@{/reload}">Recarga</a></li>
+                    <li><a th:href="@{/history}">Historial</a></li>
+                    <li><a th:href="@{/settings}">Ajustes</a></li>
+                    <li><a th:href="@{#}">Cuenta</a></li>
+                    <li><a th:href="@{/logout}">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="account-section">
+            <h1>Cuenta</h1>
+            <form class="account-form">
+                <input type="text" value="Angel" readonly>
+                <input type="text" value="Alvarado" readonly>
+                <input type="text" value="Castillo" readonly>
+                <input type="email" value="angelalvaradoc12@gmail.com" readonly>
+                <input type="tel" value="8119077404" readonly>
+                <div class="button-container">
+                    <button href="#" class="btn1" id="openModal-security">Actualizar Información</button>
+                    <button href="#" class="btn2" id="openModal-methods">Eliminar Cuenta</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Metrorrey. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
